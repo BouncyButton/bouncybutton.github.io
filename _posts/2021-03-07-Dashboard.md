@@ -43,6 +43,8 @@ L'accesso libero ai dati di interesse nazionale deve essere garantito: da una pa
 
 Mancare questo obiettivo rischia di creare una divisione tra pochi cittadini che *conoscono* e che forniscono un'informazione distorta dai propri interessi e gli altri cittadini che *non possono conoscere*, come una sorta di analfabetismo del nuovo secolo.
 
+In quest'ottica iniziative che promuovono l'adozione di [Open Data](https://www.dati.gov.it/) sono da incentivare e tenere sempre più in considerazione.
+
 ## **C'è un bisogno crescente di una teoria dei metodi grafici di rappresentazione dati**
 
 È mia opinione come la teoria **non riesca a stare al passo** con le nuove possibilità offerte dalla tecnologia. Già 15 anni fa veniva riportato come la data visualization soffra di problemi quali [l'usabilità [1]](https://ieeexplore.ieee.org/document/1463074
