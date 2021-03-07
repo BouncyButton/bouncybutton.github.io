@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Cosa ho imparato realizzando una dashboard per la simulazione dei casi di COVID-19 in tempo reale
-
 ---
 
 ![image-20210306155019827](C:\Users\berga\AppData\Roaming\Typora\typora-user-images\image-20210306155019827.png)
 
-Durante il mese di marzo 2020 ho realizzato una piccola dashboard, in grado di comunicare la diffusione dell'epidemia in modo semplice, dal proprio smartphone.
+Durante il mese di marzo 2020 ho realizzato una piccola dashboard, un "cruscotto" per dirla all'italiana, in grado di comunicare la diffusione dell'epidemia in modo semplice, dal proprio smartphone.
+
+# Introduzione
 
 Ho deciso di mettere l'accento sul fatto che questi dati rappresentino **persone**: tramite un semplice calcolo, ho deciso di visualizzare quindi l'andamento in tempo reale del numero di casi confermati di coronavirus, con un contatore che incrementa ad un intervallo regolare.
 
