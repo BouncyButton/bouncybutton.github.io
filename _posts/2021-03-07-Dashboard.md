@@ -52,7 +52,7 @@ In quest'ottica iniziative che promuovono l'adozione di [Open Data](https://www.
 
 Con quali nuove modalità possiamo esplorare e comprendere meglio i dati? Un fantastico video di G. Sanderson ("3Blue1Brown"), intitolato "Simulating an epidemic", ci dà un'ottima visione di come possiamo usare la tecnologia per dare nuove, preziose, intuizioni.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gxAaO2rsdIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/gxAaO2rsdIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
