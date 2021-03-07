@@ -13,7 +13,7 @@ Ho deciso di mettere l'accento sul fatto che questi dati rappresentino **persone
 
 Sono contento dell'impatto comunicativo che questo strumento può avere: è in grado di comunicare in un modo più immediato il significato dei dati, comunicando come, secondo per secondo, una nuova persona sia stata infettata.
 
- <video src="https://bouncybutton.github.io/content/gif/covid19tracker.mp4" autoplay muted></video>
+ <video src="https://bouncybutton.github.io/content/gif/covid19tracker.mp4" autoplay muted loop></video>
 
 *Versione interattiva su GitHub:* [bouncybutton.github.com/covid19tracker](https://bouncybutton.github.io/covid19tracker/). *La versione attualmente online è dismessa e contiene dei dati storici e non aggiornati*.
 
