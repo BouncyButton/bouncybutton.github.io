@@ -11,9 +11,9 @@ I recenti avvenimenti attorno al COVID-19 mi hanno portato a riflettere su come 
 
 Da mesi medito di completare e diffondere una serie di articoli basati su una ricerca personale svolta presso l'Università di Padova. Questa ricerca tocca un tema a me molto caro: la **comunicazione** e la **responsabilità** che programmatori, *data scientist* e ricercatori possiedono quando utilizzano i propri strumenti per parlare con il grande pubblico. Centrale per tutte queste figure è la raccolta, l'elaborazione e la comunicazione dei **dati**: cardine della ricerca sperimentale, questi spesso sono gli unici mezzi che abbiamo per validare o confutare le nostre teorie scientifiche.
 
-Il tema che voglio introdurre con questa serie di articoli vuole dare una panoramica accessibile al più vasto pubblico, per far capire le decisioni che i professionisti di vari settori dovrebbero tenere in considerazione quando utilizzano dei dati per comunicare. In particolare tenterò di coinvolgere l'attuale tematica pandemica: in questa discussione la figura di un "informatico" come la mia può essere utile non tanto nel discutere complessi argomenti di medicina, quanto nel fare chiarezza di come l'enorme mole di dati a cui siamo esposti ogni giorno venga trattata e comunicata.
+Il tema che voglio introdurre con questa serie di articoli vuole dare una panoramica accessibile al più vasto pubblico, per far capire le decisioni che i professionisti di vari settori dovrebbero tenere in considerazione quando utilizzano dei dati per comunicare. In particolare tento di coinvolgere l'attuale tematica pandemica: in questa discussione la figura di un "informatico" come la mia può essere utile non tanto nel discutere complessi argomenti di medicina, quanto nel fare chiarezza di come l'enorme mole di dati a cui siamo esposti ogni giorno venga trattata e comunicata.
 
-Parleremo ora di una disciplina precisa, spesso fraintesa o poco considerata: la data visualization, ossia, la **rappresentazione grafica di dati**.
+Parliamo ora di una disciplina precisa, spesso fraintesa o poco considerata: la data visualization, ossia, la **rappresentazione grafica di dati**.
 
 # Data visualization
 
@@ -75,7 +75,7 @@ La scientific visualization mira a realizzare visualizzazioni a scopo scientific
 
 > Information visualization [is defined] as visual representations of the semantics, or meaning, of information. In contrast to scientific visualization, information visualization typically deals with nonnumeric, nonspatial, and high-dimensional data. ([C. Chen)](https://ieeexplore.ieee.org/document/1463074)
 
-L'information visualization invece si occupa di studiare informazione più astratta alla quale proviamo a dare una interpretazione, se vogliamo, con "un paio di occhiali differenti" (citando le lezioni di un importante [professore](https://en.wikipedia.org/wiki/Massimo_Marchiori) che ho avuto la fortuna di seguire).
+L'information visualization invece si occupa di studiare informazione più astratta alla quale proviamo a dare una interpretazione, se vogliamo, con "un paio di occhiali differenti" (citando un mio eccentrico [professore](https://en.wikipedia.org/wiki/Massimo_Marchiori)).
 
 L'informatica per questo è centrale nella costruzione di questi occhiali: ci dà i mezzi per processare e rappresentare in modo grafico grandi quantità di dati, in modo da sintetizzarne informazioni utili.
 

@@ -9,9 +9,9 @@ Durante il mese di marzo 2020 ho realizzato una piccola dashboard, un "cruscotto
 
 # Introduzione
 
-Ho deciso di mettere l'accento sul fatto che questi dati rappresentino **persone**: tramite un semplice calcolo, ho deciso di visualizzare quindi l'andamento in tempo reale del numero di casi confermati di coronavirus, con un contatore che incrementa ad un intervallo regolare.
+Ho deciso di mettere l'accento sul fatto che questi dati rappresentino **persone**: tramite un semplice calcolo, ho deciso di visualizzare quindi l'andamento in tempo reale del numero di casi confermati positivi di coronavirus, con un contatore che incrementa ad un intervallo regolare.
 
-Sono contento dell'impatto comunicativo che questo strumento può avere: è in grado di comunicare in un modo più immediato il significato dei dati, comunicando come, secondo per secondo, una nuova persona sia stata infettata.
+Sono contento dell'impatto comunicativo che questo strumento può avere: è in grado di comunicare in un modo più **immediato** il significato dei dati, comunicando come, **secondo per secondo**, una nuova persona sia stata infettata.
 
  <video src="https://bouncybutton.github.io/content/gif/covid19tracker.mp4" autoplay muted loop></video>
 
@@ -23,7 +23,7 @@ In primo luogo ho trovato utile considerare un approccio *mobile-first*: questo 
 
 La previsione dell'andamento dei casi nei giorni futuri, benché realizzata in maniera elementare, è utile per comprendere se l'epidemia stia **rallentando** o **accelerando**, che è la domanda che ci siamo maggiormente posti in questi mesi. Questa modalità tuttavia non dà la possibilità di confrontare agevolmente il tasso di crescita in date differenti.
 
-Da segnalare come la differenza tra **casi confermati** e **contagiati effettivi** non sia stata sempre recepita, malgrado l'avviso che comunque i dati mostrati rappresentano una stima. 
+Da segnalare come la differenza tra **casi confermati** e **contagiati effettivi** non è stata sempre recepita, malgrado l'avviso che comunque i dati mostrati rappresentano una stima. 
 
 Altri aspetti sono stati ignorati, come la **percentuale di tamponi positivi** o **nuove rappresentazioni** grafiche. Questi punti nascondono ulteriori insidie, sia tecniche che comunicative: ad esempio, un basso tasso di tamponi positivi è indice di ridotta crescita della pandemia o di una insufficiente quantità di tamponi effettuati?
 
