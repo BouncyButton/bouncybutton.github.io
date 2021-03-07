@@ -3,9 +3,9 @@ layout: post
 title: Cosa ho imparato realizzando una dashboard per la simulazione dei casi di COVID-19 in tempo reale
 ---
 
-![image-20210306155019827](C:\Users\berga\AppData\Roaming\Typora\typora-user-images\image-20210306155019827.png)
+![image-20210306155019827](https://bouncybutton.github.io/images/datavis/dashboard-preview.png)
 
-Durante il mese di marzo 2020 ho realizzato una piccola dashboard, un "cruscotto" per dirla all'italiana, in grado di comunicare la diffusione dell'epidemia in modo semplice, dal proprio smartphone.
+Durante il mese di marzo 2020 ho realizzato una piccola dashboard, un "cruscotto" per dirla all'italiana, in grado di comunicare lo stato della diffusione dell'epidemia in modo semplice, dal proprio smartphone.
 
 # Introduzione
 
@@ -13,7 +13,7 @@ Ho deciso di mettere l'accento sul fatto che questi dati rappresentino **persone
 
 Sono contento dell'impatto comunicativo che questo strumento può avere: è in grado di comunicare in un modo più immediato il significato dei dati, comunicando come, secondo per secondo, una nuova persona sia stata infettata.
 
- <video src="https://bouncybutton.github.io/content/gif/covid19tracker.mp4"></video>
+ <video src="https://bouncybutton.github.io/content/gif/covid19tracker.mp4" autoplay muted></video>
 
 *Versione interattiva su GitHub:* [bouncybutton.github.com/covid19tracker](https://bouncybutton.github.io/covid19tracker/). *La versione attualmente online è dismessa e contiene dei dati storici e non aggiornati*.
 
@@ -25,11 +25,11 @@ La previsione dell'andamento dei casi nei giorni futuri, benché realizzata in m
 
 Da segnalare come la differenza tra **casi confermati** e **contagiati effettivi** non sia stata sempre recepita, malgrado l'avviso che comunque i dati mostrati rappresentano una stima. 
 
-Altri aspetti sono stati ignorati, come la **percentuale di tamponi positivi** o **nuove rappresentazioni** grafiche. Questi punti nascondono ulteriori insidie, sia tecniche che comunicative: un basso tasso di tamponi positivi è indice di ridotta crescita della pandemia o di una insufficiente quantità di tamponi effettuati?
+Altri aspetti sono stati ignorati, come la **percentuale di tamponi positivi** o **nuove rappresentazioni** grafiche. Questi punti nascondono ulteriori insidie, sia tecniche che comunicative: ad esempio, un basso tasso di tamponi positivi è indice di ridotta crescita della pandemia o di una insufficiente quantità di tamponi effettuati?
 
 # Tre punti fondamentali
 
-Senza soffermarmi su analisi tecniche (di tecnico non c'è nulla di rilevante) vorrei invece concentrarmi su alcune lezioni che ho imparato a seguito di questo studio.
+Senza soffermarmi su ulteriori analisi tecniche (a livello tecnologico c'è poco di interessante) vorrei invece concentrarmi su alcune lezioni che ho imparato a seguito di questo studio.
 
 ## Data visualization influenza l'opinione pubblica
 

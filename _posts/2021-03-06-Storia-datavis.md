@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dati, grafici, pandemie e Florence Nightingale. Come il passato può aiutare a comprendere il presente
+title: "Dati, grafici, pandemie e Florence Nightingale: come il passato può aiutare a comprendere il presente"
 ---
 
 In questo nuovo post affronto due eventi storici per la data visualization. Il primo mostra come nell'Ottocento alcune innovazioni riuscirono a migliorare le condizioni di vita dei soldati dell'esercito britannico, comunicando efficacemente i pericoli delle pandemie in corso. Il secondo affronta come negli anni '80 si siano definite delle basi della teoria di questa disciplina.
@@ -39,19 +39,19 @@ Grazie a tecniche di **visualizzazione dati** e alla statistica, Nightingale sco
 
 Questo grafico raffigura la crescita della pandemia mese per mese, indicando in blu come le malattie contagiose siano la causa di morte predominante rispetto a ferite in guerra (in rosso). Il grafico si sviluppa in senso orario, mostrando mese per mese una area proporzionale al numero dei morti.
 
-Questo è stato uno dei primi **esempi di successo** per la data visualization e la sua storia è incredibilmente attuale: comunicare in modalità grafica un evento complesso può essere determinante per la corretta percezione dell'intera popolazione. Altrettanto importante è come coinvolga questa raffigurazione studi una **pandemia in corso**: vediamo ad esempio come risalti subito la proporzione tra malattie e feriti, un paragone che sarebbe utilissimo in chiave moderna per l'interpretazione dell'impatto del COVID-19.
+Questo è stato uno dei primi **esempi di successo** per la data visualization e la sua storia è incredibilmente attuale: comunicare in modalità grafica un evento complesso può essere determinante per la corretta percezione dell'intera popolazione. Altrettanto importante è come questa raffigurazione studi una **pandemia in corso**: vediamo ad esempio come risalti subito la proporzione tra malattie e feriti, un paragone che sarebbe utilissimo in chiave moderna per interpretare l'impatto del COVID-19.
 
 # Era contemporanea (1980 – oggi)
 
-Ci spostiamo ora all'era moderna, dove tra i paper presenti ho deciso di studiare [la pubblicazione [2]](www.jstor.org/stable/2288400) di William S. Cleveland, un *computer scientist*.
+Ci spostiamo ora al secolo scorso, dove tra i paper presenti ho deciso di studiare [la pubblicazione [2]](www.jstor.org/stable/2288400) di William S. Cleveland, un *computer scientist*.
 
-La sua pubblicazione dell'84 lamenta una **mancanza di una teoria** ben fondata e di una metodologia appropriata in grado di testare il livello di percezione umana di **rappresentazioni grafiche dei dati**. Questo paper propone una prima metodologia atta a misurare l'accuratezza della percezione e si interroga come sia possibile incrementare **quantità **e **qualità** dell'informazione percepita.
+La sua pubblicazione dell'84 lamenta una **mancanza di una teoria** ben fondata e di una metodologia appropriata in grado di testare il livello di percezione umana di **rappresentazioni grafiche dei dati**. Questo paper propone una prima metodologia atta a misurare l'accuratezza della percezione e si interroga come sia possibile incrementare **quantità** e **qualità** dell'informazione percepita.
 
 ![image-20210306110620838](https://bouncybutton.github.io/images/datavis/cleveland-perception.png)
 
-Vediamo come Cleveland identifica anche 10 elementi percettivi di base. Riesce ad ordinarli per capacità comunicativa tramite uno studio quantitativo, paragonando la correttezza della percezione di un campione di persone. Vediamo ad esempio come le barre siano preferite ad inclinazioni o area.
+Cleveland identifica anche 10 elementi percettivi di base. Riesce ad ordinarli per capacità comunicativa tramite uno studio quantitativo, paragonando la correttezza della percezione di un campione di persone. Vediamo ad esempio come le barre siano preferite ad inclinazioni o area.
 
-Benché per la tecnologia 35 anni siano effettivamente un'eternità, l'importanza di questo paper è cruciale: ogni buon scienziato infatti mentre comunica dovrebbe tenere bene a considerazione *come* lo fa. Esiste un inevitabile **trade-off** tra qualità e quantità dell'informazione: una lista di numeri rappresentanti i contagi giornalieri di COVID-19 per provincia presenta molti dati ma poca informazione ai più; una cartina colorata o dei grafici comparativi danno una lettura profondamente differente e molto più intuitiva.
+Benché per la tecnologia 35 anni siano effettivamente un'eternità, l'importanza di questo paper è cruciale: ogni buon scienziato infatti mentre comunica dovrebbe tenere bene a considerazione *come* lo fa. Esiste inoltre un inevitabile **trade-off** tra qualità e quantità dell'informazione: una lista di numeri rappresentanti i contagi giornalieri di COVID-19 per provincia presenta molti dati ma poca informazione ai più; una cartina colorata o dei grafici comparativi danno una lettura profondamente differente e molto più intuitiva.
 
 # Proposta... dal passato
 
@@ -88,8 +88,7 @@ I prossimi articoli:
 * [Dati, grafici, pandemie e Florence Nightingale: come il passato può aiutare a comprendere il presente](https://bouncybutton.github.io/storia-datavis/)
 
 * Comunicazione efficace durante la pandemia: una analisi critica di alcune comunicazioni pubbliche avvenute tra marzo e agosto 2020
-* Nuove rappresentazioni grafiche dell’informazione: usare la tecnologia per dare nuove intuizioni
-* Creazione di una dashboard: qualche lezione imparata dalla realizzazione di una dashboard per il tracciamento del COVID-19 in Italia
+* [Creazione di una dashboard: qualche lezione imparata dalla realizzazione di una dashboard per il tracciamento del COVID-19 in Italia](https://bouncybutton.github.io/Dashboard/)
 
 # Referenze
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Come comunicare i dati di una pandemia. Introduzione alla data visualization
+title: "Come comunicare i dati di una pandemia: introduzione alla data visualization"
 ---
 
 I recenti avvenimenti attorno al COVID-19 mi hanno portato a riflettere su come l'informatica possa avere un impatto positivo nella società, in particolare contribuendo a **comunicare efficacemente** al pubblico i **pericoli di una pandemia** in corso.
@@ -88,8 +88,7 @@ I prossimi articoli:
 * [Dati, grafici, pandemie e Florence Nightingale: come il passato può aiutare a comprendere il presente](https://bouncybutton.github.io/storia-datavis/)
 
 * Comunicazione efficace durante la pandemia: una analisi critica di alcune comunicazioni pubbliche avvenute tra marzo e agosto 2020
-* Nuove rappresentazioni grafiche dell’informazione: usare la tecnologia per dare nuove intuizioni
-* Creazione di una dashboard: qualche lezione imparata dalla realizzazione di una dashboard per il tracciamento del COVID-19 in Italia
+* [Creazione di una dashboard: qualche lezione imparata dalla realizzazione di una dashboard per il tracciamento del COVID-19 in Italia](https://bouncybutton.github.io/dashboard/)
 
 # Referenze
 
