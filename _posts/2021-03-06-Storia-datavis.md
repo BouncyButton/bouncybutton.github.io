@@ -3,9 +3,7 @@ layout: post
 title: Dati, grafici, pandemie e Florence Nightingale. Come il passato può aiutare a comprendere il presente
 ---
 
-![image-20210306110620838](https://bouncybutton.github.io/images/datavis/nightingale-chart.png)
-
-In questo nuovo post affronto due eventi storici per la data visualization. Il primo mostra come nell'Ottocento alcune innovazioni riuscirono a migliorare le condizioni di vita dei soldati dell'esercito britannico, comunicando efficacemente i pericoli delle pandemie in corso. Il secondo, di carattere più tecnico, affronta come negli anni '80 si siano definite delle basi della teoria di questa disciplina.
+In questo nuovo post affronto due eventi storici per la data visualization. Il primo mostra come nell'Ottocento alcune innovazioni riuscirono a migliorare le condizioni di vita dei soldati dell'esercito britannico, comunicando efficacemente i pericoli delle pandemie in corso. Il secondo affronta come negli anni '80 si siano definite delle basi della teoria di questa disciplina.
 
 # Cenni storici della data visualization
 
@@ -43,7 +41,7 @@ Questo grafico raffigura la crescita della pandemia mese per mese, indicando in 
 
 Questo è stato uno dei primi **esempi di successo** per la data visualization e la sua storia è incredibilmente attuale: comunicare in modalità grafica un evento complesso può essere determinante per la corretta percezione dell'intera popolazione. Altrettanto importante è come coinvolga questa raffigurazione studi una **pandemia in corso**: vediamo ad esempio come risalti subito la proporzione tra malattie e feriti, un paragone che sarebbe utilissimo in chiave moderna per l'interpretazione dell'impatto del COVID-19.
 
-# Era contemporanea (1980  – oggi)
+# Era contemporanea (1980 – oggi)
 
 Ci spostiamo ora all'era moderna, dove tra i paper presenti ho deciso di studiare [la pubblicazione [2]](www.jstor.org/stable/2288400) di William S. Cleveland, un *computer scientist*.
 
@@ -59,13 +57,13 @@ Benché per la tecnologia 35 anni siano effettivamente un'eternità, l'importanz
 
 Infine, propongo alcune visualizzazioni, nate dalle considerazioni fatte nei due precedenti paragrafi.
 
-La prima visualizzazione è stata realizzata da Nightingale: confronta il tasso di mortalità annuale, differenziando tra popolazione civile (in nero) e militari (in rosso). Si nota immediatamente come, grazie a questa *baseline*, l'impatto delle condizioni igienico-sanitarie nei militari del tempo. 
+La prima visualizzazione è stata realizzata da Nightingale: confronta il tasso di mortalità annuale, differenziando tra popolazione civile (in nero) e militari (in rosso). Si nota immediatamente come, grazie a questa *baseline*, l'impatto delle condizioni igienico-sanitarie nei militari del tempo. Come sottolinea Cleveland, l'utilizzo di barre allineate è molto efficace rispetto a forme grafiche differenti.
 
 ![image-20210307155805622](https://bouncybutton.github.io/images/datavis/bar1.png)
 
 *Nightingale, Morti per 1000 viventi, popolazione civile vs militari, per fascia di età tra 20 e 40 anni*
 
-Possiamo realizzare una visualizzazione simile, considerando il tasso di mortalità per la prima metà dell'anno 2019 e la prima metà dell'anno 2020. Consideriamo le fasce d'età della popolazione più esposta, ossia dai 65 anni in su.
+Possiamo realizzare una visualizzazione simile, considerando il tasso di mortalità per la prima metà dell'anno 2019 e la prima metà dell'anno 2020. A differenza di Nightingale, consideriamo le fasce d'età della popolazione più esposta, ossia dai 65 anni in su.
 
 ![image-20210307155811389](https://bouncybutton.github.io/images/datavis/bar2.png)
 
@@ -79,8 +77,22 @@ La situazione è ancora più drammatica considerando esclusivamente una delle re
 
 >  Update: Il 5 marzo 2021 l'ISTAT ha diffuso [un nuovo studio](https://www.istat.it/it/archivio/254507) che realizza un confronto molto simile, evidenziando ancora l'impatto della pandemia nel nostro paese.
 
+# Vuoi approfondire?
+
+I precedenti articoli:
+
+* [Come comunicare i dati di una pandemia: introduzione alla data visualization](https://bouncybutton.github.io/datavis-intro)
+
+I prossimi articoli:
+
+* [Dati, grafici, pandemie e Florence Nightingale: come il passato può aiutare a comprendere il presente](https://bouncybutton.github.io/storia-datavis/)
+
+* Comunicazione efficace durante la pandemia: una analisi critica di alcune comunicazioni pubbliche avvenute tra marzo e agosto 2020
+* Nuove rappresentazioni grafiche dell’informazione: usare la tecnologia per dare nuove intuizioni
+* Creazione di una dashboard: qualche lezione imparata dalla realizzazione di una dashboard per il tracciamento del COVID-19 in Italia
+
 # Referenze
 
-* [1] Cohen, I. (1984). Florence Nightingale. *Scientific American,* *250*(3), 128-137. http://www.jstor.org/stable/24969329
-* [2] Cleveland, W., & McGill, R. (1984). Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods. *Journal of the American Statistical Association*, *79*(387), 531-554. doi:10.2307/2288400. Retrieved August 30, 2020, from www.jstor.org/stable/2288400.
-* [3] Dati demografici italiani, anni 2019-2020, elaborazione Istat. Retrieved August 31, 2020, from https://www.istat.it/it/archivio/240401 and https://www.tuttitalia.it/statistiche/popolazione-eta-sesso-stato-civile-2019/ 
+* [1] Cohen, I. (1984). Florence Nightingale. *Scientific American,* *250*(3), 128-137. [http://www.jstor.org/stable/24969329](http://www.jstor.org/stable/24969329)
+* [2] Cleveland, W., & McGill, R. (1984). Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods. *Journal of the American Statistical Association*, *79*(387), 531-554. doi:10.2307/2288400. Retrieved August 30, 2020, from [www.jstor.org/stable/2288400](www.jstor.org/stable/2288400).
+* [3] Dati demografici italiani, anni 2019-2020, elaborazione Istat. Retrieved August 31, 2020, from [https://www.istat.it/it/archivio/240401](https://www.istat.it/it/archivio/240401) and [https://www.tuttitalia.it/statistiche/popolazione-eta-sesso-stato-civile-2019/](https://www.tuttitalia.it/statistiche/popolazione-eta-sesso-stato-civile-2019/ ) 
