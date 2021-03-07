@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dati, grafici, pandemie e Florence Nightingale: come il passato può aiutare a comprendere il presente
+title: Dati, grafici, pandemie e Florence Nightingale. Come il passato può aiutare a comprendere il presente
 ---
 
 ![image-20210306110620838](https://bouncybutton.github.io/images/datavis/nightingale-chart.png)
