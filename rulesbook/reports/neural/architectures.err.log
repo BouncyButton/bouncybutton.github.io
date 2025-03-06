@@ -1,0 +1,69 @@
+Traceback (most recent call last):
+  File "/Users/berga/PycharmProjects/ideas/.venv/lib/python3.11/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/Users/berga/PycharmProjects/ideas/.venv/lib/python3.11/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/berga/PycharmProjects/ideas/.venv/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/berga/PycharmProjects/ideas/.venv/lib/python3.11/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/Users/berga/PycharmProjects/ideas/.venv/lib/python3.11/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/berga/PycharmProjects/ideas/.venv/lib/python3.11/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import torch
+
+
+class AndLayer(torch.nn.Module):
+    def __init__(self, n_inputs, n_outputs):
+        super(AndLayer, self).__init__()
+        self.weights = torch.nn.Parameter(torch.rand(n_inputs, n_outputs))
+        # self.clip = torch.nn.Hardtanh(0, 1)
+        self.clip = torch.nn.Sigmoid()
+
+    def forward(self, x):
+        w = self.clip(self.weights)
+        # return torch.prod(1. - (1. - x) * w, dim=1)
+        # i want to get for each x_i and for each z_j, z_j = 1 - (1 - x_i) * w_ij
+        return torch.prod(1. - (1. - x).unsqueeze(2) * w, dim=1)
+
+
+class OrLayer(torch.nn.Module):
+    def __init__(self, n_inputs, n_outputs):
+        super(OrLayer, self).__init__()
+        self.weights = torch.nn.Parameter(torch.rand(n_inputs, n_outputs))
+        self.clip = torch.nn.Hardtanh(0, 1)
+
+    def forward(self, x):
+        w = self.clip(self.weights)
+        # return 1. - torch.prod(1 - x @ w, dim=1)
+        return 1. - torch.prod(1 - x.unsqueeze(2) * w, dim=1)
+
+
+and_layer = AndLayer(d, 2 * d)
+or_layer = OrLayer(2 * d, 1)
+
+model = torch.nn.Sequential(and_layer, or_layer)
+
+train(model)
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[2], line 30[0m
+[1;32m     26[0m         [38;5;66;03m# return 1. - torch.prod(1 - x @ w, dim=1)[39;00m
+[1;32m     27[0m         [38;5;28;01mreturn[39;00m [38;5;241m1.[39m [38;5;241m-[39m torch[38;5;241m.[39mprod([38;5;241m1[39m [38;5;241m-[39m x[38;5;241m.[39munsqueeze([38;5;241m2[39m) [38;5;241m*[39m w, dim[38;5;241m=[39m[38;5;241m1[39m)
+[0;32m---> 30[0m and_layer [38;5;241m=[39m AndLayer([43md[49m, [38;5;241m2[39m [38;5;241m*[39m d)
+[1;32m     31[0m or_layer [38;5;241m=[39m OrLayer([38;5;241m2[39m [38;5;241m*[39m d, [38;5;241m1[39m)
+[1;32m     33[0m model [38;5;241m=[39m torch[38;5;241m.[39mnn[38;5;241m.[39mSequential(and_layer, or_layer)
+
+[0;31mNameError[0m: name 'd' is not defined
+
