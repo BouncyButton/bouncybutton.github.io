@@ -6,6 +6,37 @@ kernelspec:
 
 # RIPPER
 
+
+
+## GrowRule
+
+```
+procedure IREP(Pos, Neg)
+begin
+  Ruleset := {}  // Initialize an empty set of rules
+  while Pos ≠ {} do
+    /* Grow and prune a new rule */
+    split (Pos, Neg) into (GrowPos, GrowNeg) and (PrunePos, PruneNeg)
+
+    // Grow a new rule based on the positive and negative examples
+    Rule := GrowRule(GrowPos, GrowNeg)
+
+    // Prune the rule using the prune set (PrunePos, PruneNeg)
+    Rule := PruneRule(Rule, PrunePos, PruneNeg)
+
+    // Check if the error rate of the rule on the pruning set exceeds a threshold (usually 50%)
+    if the error rate of Rule on (PrunePos, PruneNeg) > threshold then
+      return Ruleset  // If pruning fails, return the current set of rules
+    else
+      add Rule to Ruleset  // Add the successfully pruned rule to the rule set
+      remove examples covered by Rule from (Pos, Neg)  // Remove examples covered by the rule from the sets
+    endif
+  endwhile
+  return Ruleset  // Return the final rule set after all rules are generated
+end
+
+```
+
 ```{code-cell} python
 
 import ssl

@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -63,8 +63,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'neural/architectures';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Multilayer Logical Perceptron" href="mllp.html" />
-    <link rel="prev" title="Layers for learning rules with backpropagation" href="layer.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,6 +113,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -168,35 +168,50 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../intro/problem.html">Problem statement</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../intro/methods.html">Methods in rule learning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../intro/inference.html">How to infer a new rule</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../intro/combine.html">How to combine rules</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../intro/evaluation.html">How to evaluate a rule</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../condensed/1-objectives.html">Objectives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/1a-what.html">What is rule learning?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/2-why.html">Why rule learning?</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../symbolic/overview.html">Learning rules in a symbolic way</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../symbolic/apriori.html">Apriori algorithm</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../condensed/2a-how-learn-rule.html">How to infer new rules</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/2b-how-evaluate.html">How to evaluate a rule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/2c-intro-to-combinatorial.html">Introducing combinatorial procedures for rule-based model optimization</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../condensed/3-structure.html">Structure of rule-based models</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../symbolic/sequentialcovering.html">Sequential covering algorithms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../symbolic/fuzzyrules.html">Fuzzy Rules</a></li>
+
+
+
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../condensed/3a-flat-combinatorial.html">Finding rule-sets with algorithmic heuristics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/4a-findrs.html">Find-RS</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="overview.html">Learning rules with backpropagation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="unit.html">Units for learning rules with backpropagation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="layer.html">Layers for learning rules with backpropagation</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Architectures</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mllp.html">Multilayer Logical Perceptron</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rrl.html">Rule Representation Learner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nln.html">Neural Logic Networks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ddlgn.html">Logic Gate Networks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rlnet.html">Rule-learning Network</a></li>
-<li class="toctree-l2"><a class="reference internal" href="kan.html">Kolgomorov-Arnold Network</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../condensed/4b-hierarchical-combinatorial.html">Finding hierarchical models using algorithmic heuristics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/5-ripper.html">RIPPER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/5a-brl.html">Bayesian rule lists</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../condensed/5b-deep-combinatorial.html">Heuristic search for deep rule-based models</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/6-cart.html">CART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/6a-drnc.html">Deep Rule Network Classifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/6b-recap.html">Recap on rule-based models learned with combinatorial optimization techniques</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../condensed/6c-gradient.html">Gradient-based optimization for rule-based models</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/7-unit.html">Units for learning rules with backpropagation</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../condensed/8-backprop.html">Architectures</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../condensed/8a-gradient-methods.html">Gradient methods</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/9-mllp.html">Multilayer Logical Perceptron</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../condensed/10-rrl.html">Rule Representation Learner</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../condensed/12-works.html">Works</a></li>
 </ul>
 
     </div>
@@ -256,7 +271,7 @@
       
       
       
-      <li><a href="https://github.com/bouncybutton/rules" target="_blank"
+      <li><a href="https://github.com/bouncybutton/rulesbook" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -273,7 +288,7 @@
       
       
       
-      <li><a href="https://github.com/bouncybutton/rules/issues/new?title=Issue%20on%20page%20%2Fneural/architectures.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/bouncybutton/rulesbook/issues/new?title=Issue%20on%20page%20%2Fneural/architectures.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -502,27 +517,27 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 0 loss 0.34164687991142273
-Epoch 100 loss 0.00840347446501255
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 0 loss 0.7238230109214783
+Epoch 100 loss 0.04612097144126892
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 200 loss 0.0026135211810469627
-Epoch 300 loss 0.0012568376259878278
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 200 loss 0.011952370405197144
+Epoch 300 loss 0.00512245437130332
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 400 loss 0.0007122331880964339
-Epoch 500 loss 0.000438232789747417
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 400 loss 0.0027474428061395884
+Epoch 500 loss 0.0016397531144320965
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 600 loss 0.00028259490500204265
-Epoch 700 loss 0.00018755787459667772
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 600 loss 0.0010380044113844633
+Epoch 700 loss 0.0006808976177126169
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 800 loss 0.00012678088387474418
-Epoch 900 loss 8.670276292832568e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 800 loss 0.00045676587615162134
+Epoch 900 loss 0.0003108483797404915
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Test loss 6.731892062816769e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Test loss 0.000184138014446944
 </pre></div>
 </div>
 </div>
@@ -545,37 +560,37 @@ Epoch 900 loss 8.670276292832568e-05
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 0 loss 0.5129777789115906
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 0 loss 0.30797791481018066
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 100 loss 0.0011152649531140924
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 100 loss 0.0026906514540314674
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 200 loss 0.00020400574430823326
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 200 loss 0.000490583130158484
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 300 loss 8.411573799094185e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 300 loss 0.0001897452602861449
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 400 loss 4.396856456878595e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 400 loss 9.496046550339088e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 500 loss 2.542809488659259e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 500 loss 5.3792969993082806e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 600 loss 1.5716430425527506e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 600 loss 3.2491192541783676e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 700 loss 1.0128103895112872e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 700 loss 2.050962757493835e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 800 loss 6.6758425418811385e-06
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 800 loss 1.3331849913811311e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 900 loss 4.48033779321122e-06
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 900 loss 8.82657514011953e-06
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Test loss 4.021062068204628e-06
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Test loss 5.514627446245868e-06
 </pre></div>
 </div>
 </div>
@@ -614,24 +629,6 @@ Epoch 900 loss 8.670276292832568e-05
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="layer.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Layers for learning rules with backpropagation</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="mllp.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Multilayer Logical Perceptron</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
