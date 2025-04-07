@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -173,6 +173,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="1-objectives.html">Objectives</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">What is rule learning?</a></li>
+
 <li class="toctree-l2"><a class="reference internal" href="2-why.html">Why rule learning?</a></li>
 </ul>
 </details></li>
@@ -187,6 +188,7 @@
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="12-works.html">Literature review</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3a-flat-combinatorial.html">Finding rule-sets with algorithmic heuristics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="4a-findrs.html">Find-RS</a></li>
 </ul>
@@ -213,7 +215,6 @@
 <li class="toctree-l2"><a class="reference internal" href="10-rrl.html">Rule Representation Learner</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="12-works.html">Works</a></li>
 </ul>
 
     </div>
@@ -406,6 +407,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">What is rule learning?</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rules">Rules</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem">Problem</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
@@ -414,11 +416,16 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#association-rules">Association rules</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-rules">Classification rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-sets">Rule sets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-lists">Rule lists</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ilp-inductive-logic-programming">ILP (Inductive Logic Programming)</a></li>
 </ul>
 </li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-representation">Rule representation</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -443,13 +450,28 @@
 <h3>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h3>
 <p>You have a dataset with the following columns:</p>
 <ul class="simple">
-<li><p>…</p></li>
+<li><p><strong>Inputs</strong></p>
+<ol class="arabic simple">
+<li><p>Cone (boolean)</p></li>
+<li><p>Ice cream (boolean)</p></li>
+<li><p>Three flavors chosen (boolean)</p></li>
+<li><p>Give discount (boolean)</p></li>
+<li><p>Chocolate available (boolean)</p></li>
+</ol>
+</li>
+<li><p><strong>Output</strong></p>
+<ol class="arabic simple">
+<li><p>High spender (boolean)</p></li>
+<li><p>Happy customer (boolean)</p></li>
+<li><p>Returning customer (boolean)</p></li>
+</ol>
+</li>
 </ul>
 <p>Possible rules are:</p>
 <ol class="arabic simple">
 <li><p>If I buy a cone, then I will buy ice cream too (<a class="reference internal" href="#../symbolic/inference.md"><span class="xref myst">association rule</span></a>)</p></li>
-<li><p>If I choose three flavors, then I’m likely to spend more than 10 dollars (<a class="reference internal" href="#../symbolic/inference.md"><span class="xref myst">classification rule</span></a>)</p></li>
-<li><p>If I spend more than 100 dollars, then I’m likely to be a high spender (<a class="reference internal" href="#../symbolic/inference.md"><span class="xref myst">learning constraints</span></a>)</p></li>
+<li><p>If I choose three flavors, then I’m likely to be a high spender (<a class="reference internal" href="#../symbolic/inference.md"><span class="xref myst">classification rule</span></a>)</p></li>
+<li><p>If I am a returning customer, it means I am a happy customer (<a class="reference internal" href="#../symbolic/inference.md"><span class="xref myst">learning constraints</span></a>)</p></li>
 </ol>
 <p>For rule representation, see <a class="reference internal" href="../intro/inference.html"><span class="std std-doc">rules</span></a>.</p>
 </section>
@@ -469,27 +491,63 @@
 <p>LearnOneR can be used to learn classification rules from data. This is also called <strong>rule induction</strong>.</p>
 <div class="math notranslate nohighlight">
 \[
-\text{Ice cream} \rightarrow \text{High spender}
+\text{Give discount} \rightarrow \text{Happy customer}
 \]</div>
+</section>
+<section id="rule-sets">
+<h3>Rule sets<a class="headerlink" href="#rule-sets" title="Link to this heading">#</a></h3>
+<p>A rule set can be expressed as a DNF (Disjunctive Normal Form) formula. Each rule is combined using an OR operator.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{Chocolate available} \land \text{Three flavors} \\
+\vee \\
+\text{Give discount} \\
+\rightarrow \text{Returning customer}
+\end{split}\]</div>
 </section>
 <section id="rule-lists">
 <h3>Rule lists<a class="headerlink" href="#rule-lists" title="Link to this heading">#</a></h3>
 <p>RIPPER is a well-known algorithm to learn rule lists from data.</p>
 <div class="math notranslate nohighlight">
-\[
-\text{Three flavors} \rightarrow \text{More than 10 dollars}
-\text{...} \rightarrow \text{...}
-\]</div>
+\[\begin{split}
+\text{Three flavors} \land \text{Give discount} \rightarrow \text{Returning customer}, \\
+\neg \text{Chocolate available}  \land \neg \text{Give discount}  \rightarrow \neg \text{Returning customer}
+\end{split}\]</div>
 </section>
 <section id="ilp-inductive-logic-programming">
 <h3>ILP (Inductive Logic Programming)<a class="headerlink" href="#ilp-inductive-logic-programming" title="Link to this heading">#</a></h3>
 <p>ILP is a field that combines logic programming with machine learning. It can be used to learn rules from data.</p>
 <div class="math notranslate nohighlight">
 \[
-\text{...} \rightarrow \text{...}
+\text{Buys}(X, Y) \land \text{Likes}(X) \land \text{PairsWell}(X, Y) \rightarrow \text{Likes}(Y)
 \]</div>
 </section>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="rule-representation">
+<h1>Rule representation<a class="headerlink" href="#rule-representation" title="Link to this heading">#</a></h1>
+<p>The preferred way to represent a rule is in the form of an <em>if-then</em> statement. For example, a rule could be represented
+as:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+r : \{0, 1\}^d \rightarrow \{0, 1\}\\\begin{split}\begin{cases}
+r(x) &amp;= 1 &amp; \text{if } r \text{ covers } x, r \succeq x \\\
+&amp; = 0 &amp; \text{otherwise}
+\end{cases}
+\end{split}\end{aligned}\end{align} \]</div>
+<p>where <span class="math notranslate nohighlight">\(r\)</span> is the rule, <span class="math notranslate nohighlight">\(x\)</span> is an instance, and <span class="math notranslate nohighlight">\(r\)</span> covers <span class="math notranslate nohighlight">\(x\)</span> if the rule is true for the instance.</p>
+<p>Other valid representation are:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+c \leftarrow f_1 \land f_2 \land \ldots \land f_L \\
+f_1 \land f_2 \land \ldots \land f_L  \rightarrow c \\
+(a_1 = v_1) \land (a_2 = v_2) \land \ldots \land (a_L = v_L) \rightarrow c 
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(c\)</span> is the class value, and <span class="math notranslate nohighlight">\(f_i\)</span> are the features.</p>
+<p>A Prolog-like representation is also common:</p>
+<div class="highlight-prolog notranslate"><div class="highlight"><pre><span></span><span class="nf">ci</span> <span class="o">:-</span> <span class="s s-Atom">f1</span><span class="p">,</span> <span class="s s-Atom">f2</span><span class="p">,</span> <span class="p">...,</span> <span class="s s-Atom">fL</span><span class="p">.</span>
+</pre></div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -557,6 +615,7 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">What is rule learning?</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rules">Rules</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem">Problem</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
@@ -565,11 +624,16 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#association-rules">Association rules</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-rules">Classification rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-sets">Rule sets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-lists">Rule lists</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ilp-inductive-logic-programming">ILP (Inductive Logic Programming)</a></li>
 </ul>
 </li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-representation">Rule representation</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>

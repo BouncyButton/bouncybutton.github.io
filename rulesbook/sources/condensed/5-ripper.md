@@ -32,3 +32,13 @@ RIPPER (Repeated Incremental Pruning to Produce Error Reduction) is a rule learn
   * Remove all data points covered by rule $r$
   * Learn another rule on the remaining data.
 * Return the decision list.
+
+## RIPPER algorithm
+
+RIPPER is substantially based on IREP. 
+
+![IREP algorithm](IREP.png)
+
+The extension given by RIPPER refines the rule list by applying multiple ($k$) times the base algorithm. 
+
+![RIPPER algorithm](RIPPER.png)

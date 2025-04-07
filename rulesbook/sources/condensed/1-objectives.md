@@ -19,4 +19,4 @@ In the following introduction, we want to provide:
 
 1. **Rules**: Broadly speaking, a rule defines **relationships**.
 2. **Rule-based model**: Rules are combined into a **model** to perform a task, e.g., classification.
-3. **Backpropagation vs. combinatorial optimization**: pros and cons for two learning approaches.
+3. **Gradient-based vs. combinatorial optimization**: pros and cons for two learning approaches.

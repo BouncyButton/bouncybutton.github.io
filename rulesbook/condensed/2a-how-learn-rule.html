@@ -173,6 +173,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="1-objectives.html">Objectives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="1a-what.html">What is rule learning?</a></li>
+
 <li class="toctree-l2"><a class="reference internal" href="2-why.html">Why rule learning?</a></li>
 </ul>
 </details></li>
@@ -187,6 +188,7 @@
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="12-works.html">Literature review</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3a-flat-combinatorial.html">Finding rule-sets with algorithmic heuristics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="4a-findrs.html">Find-RS</a></li>
 </ul>
@@ -213,7 +215,6 @@
 <li class="toctree-l2"><a class="reference internal" href="10-rrl.html">Rule Representation Learner</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="12-works.html">Literature review</a></li>
 </ul>
 
     </div>
@@ -410,23 +411,24 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="how-to-infer-new-rules">
 <h1>How to infer new rules<a class="headerlink" href="#how-to-infer-new-rules" title="Link to this heading">#</a></h1>
+<p>We will focus on rule <strong>induction</strong>, that is, learning a rule to predict a given class.</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Rule} \equiv A_1 \, \land \,\, ... \, \land \, A_n \rightarrow \text{C}
+\]</div>
 <p>To infer a rule, it is needed to define two things:</p>
 <ol class="arabic simple">
-<li><p>Its antecedent, which is the condition that must be satisfied for the rule to be true.</p></li>
-<li><p>Its consequent, which describes what the rule entails.</p></li>
+<li><p>Its <strong>antecedent</strong>, which is the condition that must be satisfied for the rule to be true.</p></li>
+<li><p>Its <strong>consequent</strong>, which describes what the rule entails.</p></li>
 </ol>
 <p>A consequent can be inferred from a set of examples by estimating the most frequent class in the selected data (<strong>maximum likelihood</strong> with possibly <strong>laplace smoothing</strong>).</p>
 <p>An antecedent can be inferred from data in many ways.</p>
 <ul class="simple">
-<li><p>with an association rule learning algorithm (e.g., <a class="reference internal" href="../symbolic/apriori.html"><span class="std std-doc">Apriori</span></a>, <a class="reference internal" href="../symbolic/fpgrowth.html"><span class="doc std std-doc">FPGrowth</span></a>).
+<li><p>with an <strong>association rule</strong> learning algorithm (e.g., <a class="reference internal" href="../symbolic/apriori.html"><span class="std std-doc">Apriori</span></a>, <a class="reference internal" href="../symbolic/fpgrowth.html"><span class="doc std std-doc">FPGrowth</span></a>).
 This choice is done by <a class="reference internal" href="../symbolic/brs.html"><span class="doc std std-doc">Bayesian Rule Sets</span></a> and <a class="reference internal" href="../symbolic/brl.html"><span class="doc std std-doc">Bayesian Rule Lists</span></a>.</p></li>
-<li><p>through a seed example (e.g., <a class="reference internal" href="../symbolic/aq.html"><span class="std std-doc">AQ</span></a>, <a class="reference internal" href="#../symbolic/find-rs.md"><span class="xref myst">Find-RS</span></a>).</p></li>
+<li><p>through a <strong>seed example</strong> (e.g., <a class="reference internal" href="../symbolic/aq.html"><span class="std std-doc">AQ</span></a>, <a class="reference internal" href="#../symbolic/find-rs.md"><span class="xref myst">Find-RS</span></a>).</p></li>
 </ul>
-<p>Some procedures learn the antecedent and the consequent jointly:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="../symbolic/learn-oner.html"><span class="std std-doc">LearnOneR</span></a> uses hill climbing to find a rule, in a general-to-specific search.</p></li>
-<li><p><a class="reference internal" href="../symbolic/ripper.html"><span class="std std-doc">RIPPER</span></a>’s GrowRule procedure uses a sequential covering strategy to find new rules.</p></li>
-</ul>
+<p>We will see both examples instanced within Find-RS, RIPPER, and BRL.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>

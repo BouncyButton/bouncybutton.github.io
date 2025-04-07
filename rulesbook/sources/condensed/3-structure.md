@@ -133,6 +133,3 @@ def multilayer(x):
 
 show_truth_table(multilayer, X)
 ```
-
-
-![Flat vs deep](../images/flat-vs-multilayer.png)

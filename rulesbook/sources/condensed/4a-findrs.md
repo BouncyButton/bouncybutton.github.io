@@ -15,7 +15,9 @@ A rule set has the best match to a **DNF structure**, since each rule shares the
 
 ## Algorithm
 
-![Find-RS algorithm](find-rs.pdf)
+In its base version, Find-RS picks a **seed example** and puts it into a *bin*. This bin is progressively extended with new examples, as long as they can define a rule that is still valid w.r.t. the negative dataset. In a sequential covering style, examples that are into a bin are removed from the positive dataset. If no more examples can fit into a bin, a new bin is created, until the whole dataset is covered.
+
+![Find-RS algorithm](find-rs.png)
 
 
 ### Input:
@@ -58,6 +60,8 @@ A rule set has the best match to a **DNF structure**, since each rule shares the
 
 ## Find-RS Simplification Procedure
 
+We perform a simplification procedure to merge similar bins.
+
 ### Input:
 - $B$: Set of bins  
 - $D$: Set of rules  
@@ -94,6 +98,8 @@ A rule set has the best match to a **DNF structure**, since each rule shares the
 
 ## Find-RS Generalization Procedure
 
+We perform a generalization procedure to make each rule more general.
+
 ### Input:
 - $\mathcal{N}$: Set of negative examples  
 - $D$: Set of rules  
@@ -121,7 +127,9 @@ A rule set has the best match to a **DNF structure**, since each rule shares the
 
 ## Extension to weighted rule sets
 
-![Weighted Find-RS algorithm](find-rs-bp.pdf)
+The Find-RS algorithm can be extended to learn weighted rule sets. This is done by running the algorithm multiple times and assigning a weight to each rule based on the number of times it appears in the rule sets.
+
+![Weighted Find-RS algorithm](find-rs-bp.png)
 
 - **Input:**
   - $RS_1, ..., RS_N$: rule sets found by running the algorithm $N$ times

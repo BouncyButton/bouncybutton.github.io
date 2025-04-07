@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -185,6 +185,7 @@
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="12-works.html">Literature review</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3a-flat-combinatorial.html">Finding rule-sets with algorithmic heuristics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="4a-findrs.html">Find-RS</a></li>
 </ul>
@@ -211,7 +212,6 @@
 <li class="toctree-l2"><a class="reference internal" href="10-rrl.html">Rule Representation Learner</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="12-works.html">Works</a></li>
 </ul>
 
     </div>
@@ -420,7 +420,7 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="architectures">
 <h1>Architectures<a class="headerlink" href="#architectures" title="Link to this heading">#</a></h1>
-<p>There are two most commonly used architectures: flat, and deep.</p>
+<p>Broadly speaking, the literature has focused on extracting <strong>flat</strong> structures or <strong>deep</strong> structures. Let’s see a possible, differentiable, implementation.</p>
 <section id="problem">
 <h2>Problem<a class="headerlink" href="#problem" title="Link to this heading">#</a></h2>
 <p>Let’s consider a simple problem where at least three out of four binary features should be true in order to classify an instance as positive. Let’s define a common training procedure.</p>
@@ -475,7 +475,7 @@
 </section>
 <section id="flat">
 <h2>Flat<a class="headerlink" href="#flat" title="Link to this heading">#</a></h2>
-<p>The flat architecture is the easiest case. As shown by <a class="reference internal" href="#..."><span class="xref myst">Dierckx et al.</span></a>, <a class="reference external" href="https://arxiv.org/abs/2310.14336">Wang et al.</a>, <a class="reference internal" href="#"><span class="xref myst">Beck and Furnkranz</span></a> you can express a set of rules by using a CNF-based or a DNF-based representation. This translates in having an AND layer, and a OR layer, and deciding which one to process first.</p>
+<p>The flat architecture is the easiest case. As shown by <a class="reference external" href="https://drive.google.com/open?id=18akcNVRNoqxx8NseHrJtVaweINshC0hh&amp;amp;usp=drive_fs">Dierckx et al.</a>, <a class="reference external" href="https://arxiv.org/abs/2310.14336">Wang et al.</a>, <a class="reference external" href="https://drive.google.com/open?id=1GUHn_Imi_Z2o6F8EwK6ymTpCY_vJP1BJ&amp;amp;usp=drive_fs">Beck and Furnkranz</a> you can express a set of rules by using a CNF-based or a DNF-based representation. This translates in having an AND layer, and a OR layer, and deciding which one to process first.</p>
 <div class="cell tag_scroll-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
@@ -517,27 +517,27 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 0 loss 0.11118120700120926
-Epoch 100 loss 0.016826441511511803
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 0 loss 0.27428144216537476
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 200 loss 0.00453180493786931
-Epoch 300 loss 0.0020251350942999125
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 100 loss 0.003985027316957712
+Epoch 200 loss 0.000838607142213732
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 400 loss 0.0010948090348392725
-Epoch 500 loss 0.0006514564738608897
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 300 loss 0.0003541806945577264
+Epoch 400 loss 0.0001875853049568832
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 600 loss 0.00040985961095429957
-Epoch 700 loss 0.00026702883769758046
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 500 loss 0.00011071850167354569
+Epoch 600 loss 6.943924381630495e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 800 loss 0.0001779287267709151
-Epoch 900 loss 0.00012040464207530022
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 700 loss 4.522131712292321e-05
+Epoch 800 loss 3.015774564119056e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Test loss 0.00016562195378355682
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 900 loss 2.0455592675716616e-05
+Test loss 6.876538100186735e-05
 </pre></div>
 </div>
 </div>
@@ -545,6 +545,7 @@ Epoch 900 loss 0.00012040464207530022
 </section>
 <section id="deep">
 <h2>Deep<a class="headerlink" href="#deep" title="Link to this heading">#</a></h2>
+<p>Now, a deep architecture is simply the result of the stacking of multiple layers. In this case, we can use the same layers as before.</p>
 <div class="cell tag_scroll-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">and_layer1</span> <span class="o">=</span> <span class="n">AndLayer</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">d</span><span class="p">)</span>
@@ -559,37 +560,37 @@ Epoch 900 loss 0.00012040464207530022
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 0 loss 0.42085590958595276
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 0 loss 0.40597501397132874
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 100 loss 0.011028670705854893
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 100 loss 0.0014231536770239472
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 200 loss 0.0012045173207297921
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 200 loss 0.0002308716793777421
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 300 loss 0.00037648517172783613
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 300 loss 8.907655137591064e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 400 loss 0.00016828223306220025
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 400 loss 4.454753434401937e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 500 loss 8.857747889123857e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 500 loss 2.516901440685615e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 600 loss 5.10395439050626e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 600 loss 1.519953366369009e-05
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 700 loss 3.095757347182371e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 700 loss 9.591521120455582e-06
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 800 loss 1.951668491528835e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 800 loss 6.1890077631687745e-06
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 900 loss 1.2557170521176886e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 900 loss 4.053141765325563e-06
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Test loss 8.152284863172099e-06
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Test loss 7.75443550082855e-06
 </pre></div>
 </div>
 </div>

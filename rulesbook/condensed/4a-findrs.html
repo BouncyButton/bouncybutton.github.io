@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -187,6 +187,7 @@
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="12-works.html">Literature review</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="3a-flat-combinatorial.html">Finding rule-sets with algorithmic heuristics</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Find-RS</a></li>
 </ul>
@@ -213,7 +214,6 @@
 <li class="toctree-l2"><a class="reference internal" href="10-rrl.html">Rule Representation Learner</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="12-works.html">Works</a></li>
 </ul>
 
     </div>
@@ -457,7 +457,8 @@
 </section>
 <section id="algorithm">
 <h2>Algorithm<a class="headerlink" href="#algorithm" title="Link to this heading">#</a></h2>
-<p><img alt="Find-RS algorithm" src="../images/find-rs.pdf" /></p>
+<p>In its base version, Find-RS picks a <strong>seed example</strong> and puts it into a <em>bin</em>. This bin is progressively extended with new examples, as long as they can define a rule that is still valid w.r.t. the negative dataset. In a sequential covering style, examples that are into a bin are removed from the positive dataset. If no more examples can fit into a bin, a new bin is created, until the whole dataset is covered.</p>
+<p><img alt="Find-RS algorithm" src="../images/find-rs.png" /></p>
 <section id="input">
 <h3>Input:<a class="headerlink" href="#input" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -517,6 +518,7 @@
 </section>
 <section id="find-rs-simplification-procedure">
 <h2>Find-RS Simplification Procedure<a class="headerlink" href="#find-rs-simplification-procedure" title="Link to this heading">#</a></h2>
+<p>We perform a simplification procedure to merge similar bins.</p>
 <section id="id1">
 <h3>Input:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -576,6 +578,7 @@
 <hr class="docutils" />
 <section id="find-rs-generalization-procedure">
 <h2>Find-RS Generalization Procedure<a class="headerlink" href="#find-rs-generalization-procedure" title="Link to this heading">#</a></h2>
+<p>We perform a generalization procedure to make each rule more general.</p>
 <section id="id3">
 <h3>Input:<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -614,7 +617,8 @@
 </section>
 <section id="extension-to-weighted-rule-sets">
 <h2>Extension to weighted rule sets<a class="headerlink" href="#extension-to-weighted-rule-sets" title="Link to this heading">#</a></h2>
-<p><img alt="Weighted Find-RS algorithm" src="../images/find-rs-bp.pdf" /></p>
+<p>The Find-RS algorithm can be extended to learn weighted rule sets. This is done by running the algorithm multiple times and assigning a weight to each rule based on the number of times it appears in the rule sets.</p>
+<p><img alt="Weighted Find-RS algorithm" src="../images/find-rs-bp.png" /></p>
 <ul class="simple">
 <li><p><strong>Input:</strong></p>
 <ul>

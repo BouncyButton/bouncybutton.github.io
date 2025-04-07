@@ -8,7 +8,11 @@ kernelspec:
 
 Not all rules are equal.
 
-The most relevant trade-off for a rule is how much a rule is **specific** vs. how much is **correct**. A rule that is too specific will not be useful to classify many examples, while a rule that is too general will be incorrect for many examples.
+The most relevant trade-off for a rule is how much a rule is **specific** vs. how much is **correct**. 
+* A rule that is too specific will not be useful to classify many examples (too **incomplete**);
+* A rule that is too general will be incorrect for many examples (too **inconsistent**).
+
+![Completeness vs. consistency](consistency.png)
 
 The evaluation of the quality of a rule has been studied since the inception of
 AQ ([Michalski, 1969](https://www.semanticscholar.org/paper/On-the-Quasi-Minimal-Solution-of-the-General-Michalski/e3b0fe4c409930f37c0a4be9222e0b21d6471ac7)),
@@ -80,8 +84,6 @@ def support(rule, data, target=1):
     
 support(r, D)
 ```
-
-It can also be considered as the probability of the class given the rule.
 
 ### Confidence
 

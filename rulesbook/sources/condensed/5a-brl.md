@@ -1,12 +1,13 @@
 # Bayesian rule lists
 
-Bayesian rule lists are a probabilistic-based model.
+Bayesian rule lists are a probabilistic-based model. The method employs a prior over rule lists to encourage **sparsity** and leverages Bayesian inference to find the most probable rule set given the data.
 
 ## TL;DR
 * **Pros:**
   * Estimates probabilities in a sound Bayesian framework.
 * **Cons:**
   * Requires costly MCMC sampling.
+  * Bounded by the premined association rules.
 
 ## Algorithm
 

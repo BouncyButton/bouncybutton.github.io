@@ -187,6 +187,7 @@
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="12-works.html">Literature review</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3a-flat-combinatorial.html">Finding rule-sets with algorithmic heuristics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="4a-findrs.html">Find-RS</a></li>
 </ul>
@@ -213,7 +214,6 @@
 <li class="toctree-l2"><a class="reference internal" href="10-rrl.html">Rule Representation Learner</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="12-works.html">Literature review</a></li>
 </ul>
 
     </div>
@@ -423,7 +423,12 @@
   <section class="tex2jax_ignore mathjax_ignore" id="how-to-evaluate-a-rule">
 <h1>How to evaluate a rule<a class="headerlink" href="#how-to-evaluate-a-rule" title="Link to this heading">#</a></h1>
 <p>Not all rules are equal.</p>
-<p>The most relevant trade-off for a rule is how much a rule is <strong>specific</strong> vs. how much is <strong>correct</strong>. A rule that is too specific will not be useful to classify many examples, while a rule that is too general will be incorrect for many examples.</p>
+<p>The most relevant trade-off for a rule is how much a rule is <strong>specific</strong> vs. how much is <strong>correct</strong>.</p>
+<ul class="simple">
+<li><p>A rule that is too specific will not be useful to classify many examples (too <strong>incomplete</strong>);</p></li>
+<li><p>A rule that is too general will be incorrect for many examples (too <strong>inconsistent</strong>).</p></li>
+</ul>
+<p><img alt="Completeness vs. consistency" src="../images/consistency.png" /></p>
 <p>The evaluation of the quality of a rule has been studied since the inception of
 AQ (<a class="reference external" href="https://www.semanticscholar.org/paper/On-the-Quasi-Minimal-Solution-of-the-General-Michalski/e3b0fe4c409930f37c0a4be9222e0b21d6471ac7">Michalski, 1969</a>),
 and many metrics have
@@ -620,7 +625,6 @@ use the same notation, but we will have <span class="math notranslate nohighligh
 </div>
 </div>
 </div>
-<p>It can also be considered as the probability of the class given the rule.</p>
 </section>
 <section id="confidence">
 <h2>Confidence<a class="headerlink" href="#confidence" title="Link to this heading">#</a></h2>

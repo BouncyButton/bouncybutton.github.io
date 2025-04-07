@@ -6,7 +6,7 @@ kernelspec:
 
 # Architectures
 
-There are two most commonly used architectures: flat, and deep.
+Broadly speaking, the literature has focused on extracting **flat** structures or **deep** structures. Let's see a possible, differentiable, implementation.
 
 ## Problem
 
@@ -60,7 +60,7 @@ def train(model):
 
 ## Flat
 
-The flat architecture is the easiest case. As shown by [Dierckx et al.](...), [Wang et al.](https://arxiv.org/abs/2310.14336), [Beck and Furnkranz]() you can express a set of rules by using a CNF-based or a DNF-based representation. This translates in having an AND layer, and a OR layer, and deciding which one to process first.
+The flat architecture is the easiest case. As shown by [Dierckx et al.](https://drive.google.com/open?id=18akcNVRNoqxx8NseHrJtVaweINshC0hh&usp=drive_fs), [Wang et al.](https://arxiv.org/abs/2310.14336), [Beck and Furnkranz](https://drive.google.com/open?id=1GUHn_Imi_Z2o6F8EwK6ymTpCY_vJP1BJ&usp=drive_fs) you can express a set of rules by using a CNF-based or a DNF-based representation. This translates in having an AND layer, and a OR layer, and deciding which one to process first.
 
 ```{code-cell} python
 :tags: [scroll-output]
@@ -104,6 +104,7 @@ train(model)
 
 ## Deep
 
+Now, a deep architecture is simply the result of the stacking of multiple layers. In this case, we can use the same layers as before.
 
 ```{code-cell} python
 :tags: [scroll-output]

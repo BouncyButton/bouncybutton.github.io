@@ -1,12 +1,14 @@
 # Multilayer Logical Perceptron
 
-The Multilayer Logical Perceptron ([Wang et al., 2021](https://arxiv.org/abs/2310.14336)) essentially expands the
+The Multilayer Logical Perceptron ([Wang et al., 2021](https://drive.google.com/open?id=1uMuaQpDvZoXAMkl6fGUscGUTXsQR9rCf&amp;usp=drive_fs)) essentially expands the
 previous baseline with the following:
 
 1. A way to get a **discrete representation** of the rules. (Concept Rule Sets)
 2. Methods to overcome **vanishing gradients**. (Random Binarization)
 
 ## Concept Rule Sets
+
+![MLLP](mllp.png)
 
 A concept rule set is used to get back a discrete representation of the rules. Essentially, weights are binarized using a threshold.
 
