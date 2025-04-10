@@ -69,8 +69,9 @@ operators, e.g., to augment neural networks.
 |--------------------------------------------------------------------------------------------|----------|-------------------------------|--------------|-----------------|---------------------|------------------------------------------------------------------------------------------|
 | [Net-DNF](https://drive.google.com/open?id=1S4on6jtKWaqcGrISZtvjFI1oLNxi6MBe&usp=drive_fs) | 2018     | Neural network                | GD           | High            | Yes                 | DNF structure is a valid inductive bias for a model                                      |
 | [DDLGN](https://drive.google.com/open?id=15ZSBYS2C3g2C5J9kT5UkM7vRIbuNhkqB&usp=drive_fs)   | 2022     | Neural network                | GD           | High            | Yes                 | All logical functions with two arguments are useful as activation functions              |
-| [LEN](https://drive.google.com/open?id=1d5v0Ng4vun6-qYZF5JdRFk6kXi_zlS2e&usp=drive_fs)     | 2023     | Neural network, concept-based | GD           | High            | Yes                 | Based on extracted (labeled) concepts, it is possible to extract FOL rules.              |
 | [KAN](https://drive.google.com/open?id=1M2gsh0RUt986fQDHphOpZr-BAg3xAQDk&usp=drive_fs)     | 2024     | Kolgomorov-Arnold network     | GD           | Medium          | Yes                 | Symbolic computation can be embedded into a network, together with spline approximations |
+
+interepretable concept memory reasoner! 
 
 ## Inductive logic programming with gradient-based optimization
 
@@ -92,3 +93,17 @@ Some works are widely cited for their contributions to optimize these discrete s
 | [GXNOR](https://drive.google.com/open?id=1t_SsiWY-gJAPUvzV14BvC88xUn2Shafu&usp=drive_fs)                | 2018     | Neural network  | Backpropagation | High            | Yes                 | No      | Ternary neural network can be efficiently optimized                    |
 | [DFL](https://drive.google.com/open?id=1I_2aPVFpFQdxm_wIdGTatFARXREvNgpe&usp=drive_fs)                  | 2021     | N/A             | Backpropagation | High            | Yes                 | No      | Differentiable logic can be used to encode logical relationships       |
 | [Binarize Cont. Feat.](https://drive.google.com/open?id=1W9TwYaOsSFEC7dHrC9BE9dlw5Wkciexq&usp=drive_fs) | 2023     | Neural networks | Backpropagation | High            | Yes                 | No      | Binarization of continuous features can be embedded in neural networks |
+
+## Concept-based learning
+
+A relevant research direction considers concept extraction and manipulation in order to create more robust and actionable models. Here's a (non-exhaustive) list of works. You can also refer to a more exhaustive survey on the topic from the [Neuro-symbolic AI journal](https://neurosymbolic-ai-journal.com/system/files/nai-paper-743.pdf), or from [the guys from Turin](https://arxiv.org/pdf/2312.12936). 
+
+| **Work**                                                                                   | **Year** | **Model**                     | **Learning**    | **Scalability** | **Continuous data** | **TL;DR**                                                                 |
+|--------------------------------------------------------------------------------------------|----------|-------------------------------|-----------------|-----------------|---------------------|---------------------------------------------------------------------------|
+
+| [TCAV](https://drive.google.com/open?id=1sEpF52j8K5avLhryVEQPVhx12qx2bKGi&usp=drive_fs) | 2018 | Neural network                | GD              | High            | Yes                 | Labeled concepts used to distinguish what's happening in a hidden layer of a network |
+| [CBM](https://drive.google.com/open?id=1wrbpmlth8RF6th555cbRJTU0rfaKY2jb&usp=drive_fs) | 2020 | Neural network                | GD              | High            | Yes                 | Labeled concepts are predicted to make predictions actionable and more robust |
+| [LEN](https://drive.google.com/open?id=1d5v0Ng4vun6-qYZF5JdRFk6kXi_zlS2e&usp=drive_fs)     | 2023     | Neural network, concept-based | GD           | High            | Yes                 | Based on extracted (labeled) concepts, it is possible to extract FOL rules.              |
+| [CBM-AUC](...) | todo | todo | todo | todo | todo | todo |
+| [GlanceNets](...) | todo | todo | todo | todo | todo | todo |
+| [ICBMR](...) | todo | todo | todo | todo | todo | todo |

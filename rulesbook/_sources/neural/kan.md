@@ -1,1 +1,0 @@
-# Kolgomorov-Arnold Network
